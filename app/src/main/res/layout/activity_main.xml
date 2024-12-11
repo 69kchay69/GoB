@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <!--        operation-->
+        <TextView
+            android:id="@+id/math_operation"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            tools:ignore="MissingConstraints,VisualLintOverlap" />
+        <!--        result-->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints,VisualLintOverlap" />
+        <!--        1 strok-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_AC"
+                android:text="AC"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_scob1"
+                android:text="("
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_scob2"
+                android:text=")"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_delit"
+                android:text="/"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!--        2 stroke-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_7"
+                android:text="@string/_7"
+                />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_8"
+                android:text="8"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_9"
+                android:text="9"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_ymnog"
+                android:text="*"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!--        3 stroke-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_4"
+                android:text="4"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_5"
+                android:text="5"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_6"
+                android:text="6"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_plus"
+                android:text="+"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!--        4 stroke-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_1"
+                android:text="1"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:text="2"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_3"
+                android:text="3"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_minus"
+                android:text="-"
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!--    5 stroke-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_thk"
+                android:text="."
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_0"
+                android:text="0"
+                tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_back"
+                android:text="Back"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/NumberButton"
+                android:text="="
+                android:textColor="#8C9EFF"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
